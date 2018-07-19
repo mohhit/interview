@@ -1,0 +1,33 @@
+<div class="container" align="center">
+	<div class="col-md-9">
+
+		<div class="well">
+			<h3 class="text-center">USER PROFILE</h3>			
+		</div>        
+		<table cellpadding="" class="table table-bordered table-stripped table-hover table-condensed " >
+			<tr>
+				<th>Fullname</th>
+				<td><%=userdata.fullname%></td>
+			</tr>
+			<tr>
+				<th>Username</th>
+				<td><%=userdata.username%></td>
+			</tr>
+			<tr>
+				<th>Address</th>
+				<td><%=userdata.address%></td>
+			</tr>
+			<tr>
+				<th>Gender</th>
+				<td><%=userdata.gender%></td>
+			</tr>
+			<tr>
+				<th>City</th>
+				<td><%=userdata.city%></td>
+			</tr>
+
+		</table>
+
+	<a href="/profile/update" class="btn btn-primary">Update</a>
+</div>
+</div>
