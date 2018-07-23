@@ -12,7 +12,7 @@ routes.get("/",function(req,res){
 
 routes.post("/",function(req,res){
 
-	console.log(req.body);
+	// console.log(req.body);
 
 	var u = req.body.username;
 	var p = req.body.password;

@@ -1,0 +1,47 @@
+<div class="container" align="center">
+	<div class="col-md-9">
+
+		<div class="well">
+			<h3 class="text-center">Update User </h3>			
+		</div> 
+
+		<form action="/profile/update" method="post">       
+		<table cellpadding="" class="table table-bordered table-stripped table-hover table-condensed " >
+			<tr>
+				<th>Fullname</th>
+				<td><input type="text" name="fullname" value="<%=userdata.fullname%>"></td>
+			</tr>
+			<tr>
+				<th>Username</th>
+				<td><input type="text" name="username" value="<%=userdata.username%>"></td>
+			</tr>
+			<tr>
+				<th>Address</th>
+				<td><textarea name="address"><%=userdata.address%></textarea></td>
+			</tr>
+			<tr>
+				<th>Gender</th>
+				<td> <input <% if(userdata.gender=="male"){ %> checked='checked'  <% } %> type="radio" value="male" name="gender" />Male 
+
+				<input type="radio" <% if(userdata.gender=="female"){ %> checked='checked'  <% } %> value="female" name="gender" />Female</td>
+			</tr>
+			<tr>
+				<th>City</th>
+				<td><select class="form-control" name="city">
+			<option>Select</option>
+			
+					<option <% if(userdata.city=="Indore"){ %> selected='selected' <%} %>>Indore</option>
+					<option <% if(userdata.city=="Mumbai"){ %> selected='selected' <%} %>>Bhopal</option>
+					<option <% if(userdata.city=="Pune"){ %> selected='selected' <%} %>>Mumbai</option>
+					
+		</select></td>
+			</tr>
+
+
+		</table>
+
+	<button class="btn btn-primary" type="submit">Submit</button>
+	</form>
+
+</div>
+</div>

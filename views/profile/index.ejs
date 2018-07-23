@@ -26,8 +26,20 @@
 				<td><%=userdata.city%></td>
 			</tr>
 
+			<tr>
+				<th>Image</th>
+				<td><img src="/upload/<%= userdata.image %>" height="50" width="50"></td>
+			</tr>
+			
+
+
+
+			</div>
+
 		</table>
 
 	<a href="/profile/update" class="btn btn-primary">Update</a>
+
+	<a href="/profile/upload" class="btn btn-success">File Upload</a>
 </div>
 </div>

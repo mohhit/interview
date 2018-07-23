@@ -9,11 +9,13 @@ routes.use("/logout",require("../controller/logout"));
 routes.use("/profile",backdoor,require("../controller/profile"));
 
 
+
 function backdoor (req,res,next){
 
-	if(!session.is_user_logged_in){
+	if(! req.session.is_user_logged_in){
 
-		res.redirect("/login")
+		res.redirect("/login");
+
 		return;
 
 	}

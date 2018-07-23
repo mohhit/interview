@@ -23,6 +23,16 @@ module.exports.findwhere=function(obj,cb){
 	});
 }
 
+module.exports.update=function(where,obj,cb){
 
+	connection.init(function(err,client){
+
+		var db=client.db("data");
+		
+		db.collection("user").update(where,{$set:obj},cb);
+
+		
+	});
+}
 
 

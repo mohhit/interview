@@ -17,7 +17,7 @@ app.use(flash());
 app.use(fileupload());
 app.use(cache());
 
-// app.use(express.static(__dirname+'/public'));
+app.use(express.static(__dirname+'/public'));
 
 app.use(function(req,res,next){
 	res.locals.session=req.session;
